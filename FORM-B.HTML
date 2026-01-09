@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            width: 600px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h2, h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            width: 150px;
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            width: 100%;
+            padding: 5px;
+            margin-left: 10px;
+        }
+        .form-group input[type="radio"] {
+            margin-left: 10px;
+        }
+        .form-section {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+        }
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-footer button {
+            padding: 8px 16px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Employee Registration</h2>
+
+    <div class="form-section">Personal Information</div>
+    <form>
+        <div class="form-group">
+            <label for="empId">Employee ID :</label>
+            <input type="text" id="empId" name="empId">
+            <label for="empName" style="margin-left: 10px;">Employee Name :</label>
+            <input type="text" id="empName" name="empName">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email">
+            <label for="contact" style="margin-left: 10px;">Contact No :</label>
+            <input type="text" id="contact" name="contact">
+        </div>
+
+        <div class="form-group">
+            <label>Marital Status :</label>
+            <input type="radio" id="single" name="maritalStatus" value="single">
+            <label for="single">Single</label>
+            <input type="radio" id="married" name="maritalStatus" value="married" style="margin-left: 20px;">
+            <label for="married">Married</label>
+        </div>
+
+        <div class="form-section">Education Qualification</div>
+
+        <div class="form-group">
+            <label for="education">Education :</label>
+            <input type="text" id="education" name="education">
+            <label for="experience" style="margin-left: 10px;">Experience :</label>
+            <input type="text" id="experience" name="experience">
+        </div>
+
+        <div class="form-section">Job Details</div>
+
+        <div class="form-group">
+            <label for="designation">Designation :</label>
+            <input type="text" id="designation" name="designation">
+            <label for="jobLocation" style="margin-left: 10px;">Job Location :</label>
+            <input type="text" id="jobLocation" name="jobLocation">
+        </div>
+
+        <div class="form-group">
+            <label for="salary">Salary :</label>
+            <input type="text" id="salary" name="salary">
+        </div>
+
+        <div class="form-footer">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
