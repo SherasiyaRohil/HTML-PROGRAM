@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplified Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header, footer {
+            background-color: red;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: cyan;
+        }
+        .main {
+            flex: 1;
+            display: flex;
+        }
+        nav {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            width: 20%;
+        }
+        .content {
+            background-color: yellow;
+            padding: 20px;
+            width: 60%;
+            text-align: center;
+        }
+        .sidebar {
+            background-color: green;
+            color: white;
+            padding:10px;
+            width: 20%;
+
+        }
+
+        @media (max_width:768px){
+            .container{
+                flex-direcyion:column;
+                pading:10px;
+
+            } 
+            .footer{
+               flex:1; 
+            }
+            .main{
+                flex:1;
+            }
+            .content{
+                flex-direction:column;
+                padding:20px;
+            }
+            .sidebar{
+                margin-left:0;
+            }
+        }
+
+        /*for mobile*/
+        @media(max-width:468px){
+            .container{
+               font-size:18px;
+               background-color: blue; 
+            }
+            .footer{
+                padding:8px;
+                font-size: 12px;
+            }
+            .main{
+                flex:1;
+            }
+            .content{
+                flex-direction:column;
+                padding:20px;
+                background-color: blue;
+            }
+            .sidebar{
+                font-size:14px;
+                
+            }
+            
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <div class="main">
+            <nav>Navigation</nav>
+            <div class="content">Content</div>
+            <div class="sidebar">Sidebar</div>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

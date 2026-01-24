@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-container{
+            display:flex;
+            justify-content: space-between;
+        }
+        .form{
+            width:45%;
+        }
+        .form-group{
+            display: flex;
+            align-items: center;
+            margin-bottom:  10px;
+        }
+        .form-group lable{
+            display: inline-block;
+            width:150px;
+        }
+        .form-group input,.form-group select,.form-group textarea{
+            width:200px;
+        }
+
+        .form-group input[type="radio"]{
+            width:auto;
+        }
+
+        textarea {
+            height:60px;
+            width:200px;
+        }
+        
+        .buttons {
+            margin-top:50px;
+        }
+
+        .buttons input {
+            margin-top:50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form">
+        <h1>Student Registration</h1>
+        <form>    
+        <div class="form-group">
+          <lable>Full Name:</lable>
+          <input type="text" name="">
+        </div>
+
+    <div>
+        <div class="form-group">
+          <lable>Email</lable> 
+          <input type="text" name="">
+        </div>
+        
+    </div>
+
+        <div class="form-group">
+           <lable>Mobile Number</lable> 
+           <input type="Mobile Number" name="">
+        </div>
+        
+
+        <div class="form-group">
+           <lable>Address</lable>
+            <textarea rows="5" col="40" placebolder="Address"></textarea>
+        </div>
+
+        <div class="form-group">
+           <lable>Nationality</lable> 
+           <input type="Nationality" name="">
+        </div>
+
+        <div class="form-group">
+          <lable>Date of Birth</lable> 
+            <lable>
+                <input type="date" name="date">
+            </lable>
+        </div>
+
+
+        <div class="form-group">
+          <lable>Gender</lable> 
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+        </div>
+
+
+        <div class="form-group">
+           <lable>Highest degree</lable>
+            <select name="degree">
+            <option name="">---select degree</option>
+            <option name="">B.sc(hons)CS</option>
+            <option name="">B.sc It</option>
+            <option name="">B.sc Micro</option>
+            <option name="">BCA</option>
+            <option name="">MCA</option>
+            <option name="">BBA</option>
+            <option name="">MBA</option>
+            <option name="">Sivil Engneering</option>
+            <option name="">Michenical Engneering</option>
+
+        </div>
+
+        
+        
+        
+
+        <div class="form-group">
+           <lable>University</lable>
+            <input type="University" name="">
+        </div>
+        <div class="form-group">
+            <lable>CPI</lable>
+            <input type="CPI" name="CPI">
+        </div>
+
+
+        <div class="form-group">
+          <lable>Parsing Years</lable> 
+            <select name="Years">
+            <option name="">---select Years</option> 
+            <option name="" >2010</option>
+            <option name="" >2011</option>
+            <option name="" >2012</option>
+            <option name="" >2013</option>
+            <option name="" >2014</option>
+            <option name="" >2015</option>
+            <option name="" >2016</option>
+            <option name="" >2017</option>
+            <option name="" >2018</option>
+            <option name="" >2019</option>
+            <option name="" >2020</option>
+            <option name="" >2021</option> 
+            <option name="" >2022</option>
+            <option name="" >2023</option>
+            <option name="" >2024</option> 
+        </div>
+
+
+        <div class="form-group">
+          <lable>Submit</lable> 
+          <input type="button" name="Submit" id="Submit" value="Submit">
+          <input type="button" name="cancle" id="cancle" value="cancle">
+        </div>
+    </form>
+        </div>
+        <div class="form">
+        <h1> COVID-19 Vaccine Registration Form</h1>
+        <form>
+        <div classs="form-group">
+          <lable>First Name</lable>  
+        
+            <input type="First Name" name="">
+        </div>
+            <div class="form-group">
+              <lable>Last Name</lable> 
+                <input type="Last Name" name="">
+            </div>
+            <div class="form-group">
+               <lable>Aadhar Number</lable>
+                <input type="Aadhar Number" name="">
+            </div>
+            <div class="form-group">
+               <lable>Vaccine Name</lable> 
+            <select name="select vaccine name">
+            <option name="">please select vaccine name</option>
+            <option>Covicild</option>
+            <option>Covaxine</option>
+            </div>
+            <div class="form-group">
+               <lable>Vaccination Center Name</lable> 
+            </div>
+            <div>.</div>
+            <div>
+                <lable>Vaccition Center name</lable>
+                <select name="Vaccination center name"></select>
+                <option name="">---select Years</option> 
+                    <option>phc</option>
+                    <option>Chc</option>
+                    <option>civil hospital</option>
+                    <option>Subcenter</option>
+                    <option>Uphc</option>
+            </div>
+
+            <div class="form-group">
+              <lable>Date of Dose</lable> 
+                <input type="date" name="date">
+            </div>
+            <div class="form-group">
+              <lable>Dose Number</lable> 
+                <input type="text" name="">
+            </div>
+            <div class="form-group">
+              <input type="button" name="Submit" id="Submit" value="Submit">
+              <input type="button" name="cancle" id="cancle" value="cancle">
+            </div>
+        </form>
+        </div>
+     </div>  
+</html> 
+</body>

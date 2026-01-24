@@ -1,0 +1,48 @@
+<style>
+        .page{
+            background-color: aqua;
+            height: 100%;
+            padding: 10px;
+            font-size: 20px;
+        
+        }
+        .header{
+            background-color: purple;
+            color: white;
+
+        }
+        .content{
+            background-color: orange;
+            height: 400px;
+        }
+        .mytext{
+            padding: 10px;
+            width: 100%;
+        }
+        .entries{
+            width: 60px;
+            float: left;
+            padding-left: 15px;
+        }
+        .entry{
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding-right: 900px;
+            height: 30px;
+        }
+        .sidebar{
+            width: 30%;
+            background-color: black;
+            color: white;
+            float: right;
+            height: 120px;
+            padding: 5px;
+            margin-right: 15px;
+        }
+        .footer{
+            background-color: blue;
+            color: white;
+            width: 100%;
+        }
+</style>
